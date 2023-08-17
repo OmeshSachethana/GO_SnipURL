@@ -3,7 +3,7 @@ const express = require('express'); // Express framework for building web applic
 const mongoose = require('mongoose'); // Mongoose library for MongoDB interaction
 const ShortUrl = require('./models/shortUrl'); // Import the ShortUrl model from ./models/shortUrl
 const app = express(); // Create an instance of the Express app
-//const port = 5000; // Port number for the server to listen on
+const port = 5000; // Port number for the server to listen on
 
 // Connect to the MongoDB database named 'urlShortener'
 mongoose.connect('mongodb://localhost/urlShortener', {
@@ -53,4 +53,4 @@ app.get('/:shortUrl', async (req, res) => {
 });
 
 // Start the Express app and listen on the specified port (or process.env.PORT if available)
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || port);
