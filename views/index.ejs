@@ -8,26 +8,29 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Snip URL</h1>
-    <form action="" method="POST">
-        <label for="fullUrl">Full URL:</label>
-        <input type="url" name="fullUrl" id="fullUrl"/>
-        <button type="submit">GO</button>
-    </form>
-    <br><br><br>
-    <table>
-        <thead>
-            <th>Full URL</th>
-            <th>Short URL</th>
-            <th>Clicks</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="">type</a></td>
-                <td><a href="12345">type</a></td>
-                <td>10</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <h1>Snip URL</h1>
+        <form action="" method="POST" class="form-inline">
+            <label for="fullUrl" class="sr-only">Full URL:</label>
+            <input type="url" name="fullUrl" id="fullUrl" class="form-control col mr-2"/>
+            <button type="submit" class="btn btn-success">GOO</button>
+        </form>
+        <br><br><br>
+        <table>
+            <thead>
+                <th>Full URL</th>
+                <th>Short URL</th>
+                <th>Clicks</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="">type</a></td>
+                    <td><a href="12345">type</a></td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
 </body>
 </html>
